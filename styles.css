@@ -1,0 +1,52 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-optical-sizing: auto;
+}
+
+header {
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 40px;
+	background-color: lightgray;
+	color: white;
+}
+
+main {
+	padding: 5px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+table {
+  border-collapse: collapse; /* évite les doubles bordures */
+  width: 100%;
+}
+
+th, td {
+  border: 2px solid #ccc; /* fine bordure grise */
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f4f4f4; /* gris clair pour l'entête */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* une ligne sur deux en gris clair */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; /* l’autre ligne en blanc */
+}
+
+tfoot {
+  background-color: #f4f4f4; /* pied similaire à l'en-tête */
+  font-weight: bold;
+}
