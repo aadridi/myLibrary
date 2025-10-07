@@ -11,8 +11,22 @@ function Book() {
 	};
 }
 
+const classBook = class {
+	constructor(id, title, author, pages, isRead) {
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+		this.isRead = isRead;
+	}
+	info() {
+		return `${this.title} by ${this.author}, ${this.pages} pages, read : ${this.isRead}`;
+	}
+
+}
+
 function addBookToLibrary(title, author, pages, isRead) {
-	let newBook = new Book();
+	let newBook = new classBook();
 	let randomId = crypto.randomUUID();
 	newBook.id = randomId;
 	newBook.title = title;
